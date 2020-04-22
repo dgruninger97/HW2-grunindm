@@ -41,7 +41,13 @@ no longer have the integrate() method. This could lead to more design problems i
 
 ### Design Preference
 
-I prefer candidate design 1. I believe it does a better job **separting what changes from what stays the same.** Additionally, I think it will be less of a hassel
+I prefer candidate design 1. I believe it does a better job **separting what changes from what stays the same.** Additionally, I think it will be less of a hassle
 for us to maintain, since all we would have to do is add another integration method strategy when the customer wants something else. **No other code will have
 to change.** It is simple a matter of adjusting our initial program to be able to handle the strategy pattern instead of using strings to parse the integration
 type.
+
+### Class & Sequence Diagram Sketches
+
+Class Diagram:
+
+![Strategy Class Diagram](images/StrategyClassDiagram.png)
