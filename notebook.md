@@ -51,3 +51,7 @@ type.
 Class Diagram:
 
 ![Strategy Class Diagram](images/StrategyClassDiagram.png)
+
+Sequence Diagram:
+
+![Strategy Class Diagram](images/StrategySequenceDiagram.png)
