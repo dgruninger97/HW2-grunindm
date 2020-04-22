@@ -38,3 +38,10 @@ able to perform different forms of integration, per the customer.
 This also may require significant change in the other parts of the system in order to properly adapt to removing an entire class. Additionally, this will mean
 that we will have to move where the integration is being done, since now the NumericalIntegration class is responsible for doing the specific integration, and will
 no longer have the integrate() method. This could lead to more design problems in the future.
+
+### Design Preference
+
+I prefer candidate design 1. I believe it does a better job **separting what changes from what stays the same.** Additionally, I think it will be less of a hassel
+for us to maintain, since all we would have to do is add another integration method strategy when the customer wants something else. **No other code will have
+to change.** It is simple a matter of adjusting our initial program to be able to handle the strategy pattern instead of using strings to parse the integration
+type.
