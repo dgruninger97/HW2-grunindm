@@ -13,8 +13,13 @@ call that IntegrationStrategy's integrate method, and it would call the appropri
 #### Pros
 
 This will eliminate having to check what type of integrationMethod that the integrationMethod String was (located in Integrate()).
+Also, this apply's the principle of separating what changes from what stays the same. We know that the integration method will continue to change, so it makes
+sense to extract out that behavior using the strategy pattern. Finally, this will allow our system to adapt to change, as we can add more implementations of
+the IntegrationStrategy when the customer requests a new integration method.
 
 #### Cons
+
+
 
 ### Candidate Design 2: 
 
