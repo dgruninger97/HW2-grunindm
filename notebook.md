@@ -27,3 +27,10 @@ Will require us to significantly change our integrate method, and how we are cal
 For candidate design 2, we could try making the actual NumericalIntegration class a Strategy, and have the classes that implement the Strategy have their own
 integrate function. This eliminate the need for the IntegrationMethod class, as NumericalIntegration classes would have different versions which would each
 perform a different type of numerical intergration.
+
+#### Pros
+
+Could get rid of an entire class and just do the work in the NumericalIntegraiton strategies. Different strategies will have their own integrate methods and be
+able to perform different forms of integration, per the customer.
+
+#### Cons
