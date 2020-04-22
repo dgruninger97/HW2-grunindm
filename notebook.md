@@ -19,7 +19,8 @@ the IntegrationStrategy when the customer requests a new integration method.
 
 #### Cons
 
-
+Will require us to significantly change our integrate method, and how we are calling that method. This is because we are now passing in a strategy instead of a
+ string to represent our actual integration methods.
 
 ### Candidate Design 2: 
 
