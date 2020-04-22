@@ -34,3 +34,7 @@ Could get rid of an entire class and just do the work in the NumericalIntegraito
 able to perform different forms of integration, per the customer.
 
 #### Cons
+
+This also may require significant change in the other parts of the system in order to properly adapt to removing an entire class. Additionally, this will mean
+that we will have to move where the integration is being done, since now the NumericalIntegration class is responsible for doing the specific integration, and will
+no longer have the integrate() method. This could lead to more design problems in the future.
