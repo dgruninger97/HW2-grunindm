@@ -72,22 +72,46 @@ Date: 4/23/2020
 ### Candidate Design 1
 
 For the first candidate design, we could simply have the Integration class become a concrete subject that implements a subject interface, and then have
-different integration methods register as observers and add then as subscribers to our Integration class.
+different integration methods register as observers and add them as subscribers to our Integration class. Our observer will have an integrate() method instead
+of a update() method. Additionally, our subject will be able to add, remove, and integrateAll for all of its registered observers.
 
 #### Pros
 
 This does a very good job of **keeping our design loosely coupled.** Namely, it does this by completely isolating the integration methods' logic that we will be using
-from the class that is calling those methods. Therefore, our system does a good job of separating what changes from what stays the same.
+from the class that is calling those methods. Therefore, our system does a good job of separating what changes from what stays the same. The integrate methods will
+implement the observer class which will require that they have a method to perform integration, which makes sense.
 
 #### Cons
 
-This seems like somewhat of an overkill. Everytime we call to update(), or in this case integrate(), every single registered IntegrationMethod observer will perform their
+This seems like somewhat of an overkill. Everytime we call update(), or in this case integrate(), every single registered IntegrationMethod observer will perform their
 integrate(). This means we are doing a lot of extra work if we only want to perform a single integration, since we are doing all the other integrations as well.
 
 ### Candidate Design 2
 
+For the second candidate design, I propose we use the java observable API. With this design, integration methods that have registered as observers can push
+their results to the calling observable class. Our calling call will need to implement Observable so it can aquire the needed functions.
+
 #### Pros
+
+We eliminate the overkill of the first design by pushing out results of specific integration method observers rather than computing all of the observers when
+we call integrate().
 
 #### Cons
 
+Does not make use of favoring composition over inheritence, and therefore this will make it harder to adapt and change our software over time. This results in
+an overall worse design. Additionally, if the java observable API ever becomes deprecated or unused, we will have to greatly change our design in order to
+adjust.
+
 ### Design Preference
+
+I prefer the first candidate design because it does a better job favoring composition over inheritence and will do a better job of handling changes in the future. Although there are a couple
+flaws in the overkill of the funcion calls, it still will do what we want it to. Also, the first design has a more loosely coupled design between the observers
+and the subjects.
+
+### Class & Sequence Diagram Sketches
+
+Class Diagram:
+
+
+
+Sequence Diagram:
