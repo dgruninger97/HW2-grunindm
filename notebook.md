@@ -71,14 +71,23 @@ Date: 4/23/2020
 
 ### Candidate Design 1
 
+For the first candidate design, we could simply have the Integration class become a concrete subject that implements a subject interface, and then have
+different integration methods register as observers and add then as subscribers to our Integration class.
+
 #### Pros
 
+This does a very good job of **keeping our design loosely coupled.** Namely, it does this by completely isolating the integration methods' logic that we will be using
+from the class that is calling those methods. Therefore, our system does a good job of separating what changes from what stays the same.
 
 #### Cons
 
+This seems like somewhat of an overkill. Everytime we call to update(), or in this case integrate(), every single registered IntegrationMethod observer will perform their
+integrate(). This means we are doing a lot of extra work if we only want to perform a single integration, since we are doing all the other integrations as well.
 
 ### Candidate Design 2
 
 #### Pros
 
 #### Cons
+
+### Design Preference
