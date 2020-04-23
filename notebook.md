@@ -115,3 +115,5 @@ Class Diagram:
 ![Observer Class Diagram](images/ObserverClassDiagram.png)
 
 Sequence Diagram:
+
+![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
