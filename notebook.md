@@ -55,3 +55,9 @@ Class Diagram:
 Sequence Diagram:
 
 ![Strategy Class Diagram](images/StrategySequenceDiagram.png)
+
+### Citations
+
+https://sourcemaking.com/design_patterns/strategy
+
+https://refactoring.guru/design-patterns/strategy
