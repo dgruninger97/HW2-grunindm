@@ -112,6 +112,6 @@ and the subjects, which is an important principle when considering the observer 
 
 Class Diagram:
 
-
+![Observer Class Diagram](images/ObserverClassDiagram.png)
 
 Sequence Diagram:
