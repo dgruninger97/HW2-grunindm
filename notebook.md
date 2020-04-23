@@ -105,8 +105,8 @@ adjust.
 ### Design Preference
 
 I prefer the first candidate design because it does a better job favoring composition over inheritence and will do a better job of handling changes in the future. Although there are a couple
-flaws in the overkill of the funcion calls, it still will do what we want it to. Also, the first design has a more loosely coupled design between the observers
-and the subjects.
+flaws in the overkill of the funcion calls, it still will do what we want it to do. Also, the first design has a more loosely coupled design between the observers
+and the subjects, which is an important principle when considering the observer pattern.
 
 ### Class & Sequence Diagram Sketches
 
