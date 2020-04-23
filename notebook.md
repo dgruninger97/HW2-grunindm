@@ -117,3 +117,13 @@ Class Diagram:
 Sequence Diagram:
 
 ![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
+
+### Citations
+
+https://docs.oracle.com/javase/7/docs/api/java/util/Observable.html
+
+https://sourcemaking.com/design_patterns/observer
+
+https://www.baeldung.com/java-observer-pattern
+
+### Time Spent -- 1.5 hours
