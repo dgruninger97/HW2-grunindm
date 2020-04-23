@@ -64,3 +64,21 @@ https://refactoring.guru/design-patterns/strategy
 
 
 ### Time Spent -- 2 hours
+
+## Observer Pattern
+
+Date: 4/23/2020
+
+### Candidate Design 1
+
+#### Pros
+
+
+#### Cons
+
+
+### Candidate Design 2
+
+#### Pros
+
+#### Cons
