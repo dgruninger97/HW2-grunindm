@@ -63,4 +63,4 @@ https://sourcemaking.com/design_patterns/strategy
 https://refactoring.guru/design-patterns/strategy
 
 
-### Time Spent -- **2 hours**
+### Time Spent -- 2 hours
