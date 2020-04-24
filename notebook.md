@@ -112,11 +112,11 @@ and the subjects, which is an important principle when considering the observer 
 
 Class Diagram:
 
-![Observer Class Diagram](images/StrategyClassDiagram.png)
+![Observer Class Diagram](images/ObserverClassDiagram.png)
 
 Sequence Diagram:
 
-![Observer Sequence Diagram](images/StrategySequenceDiagram.png)
+![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
 
 ### Citations
 
@@ -136,11 +136,11 @@ Date: 4/24/2020
 
 Strategy Pattern Class Diagram:
 
-![Observer Class Diagram](images/ObserverClassDiagram.png)
+![Observer Class Diagram](images/StrategyClassDiagram.png)
 
 Strategy Pattern Sequence Diagram:
 
-![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
+![Observer Sequence Diagram](images/StrategySequenceDiagram.png)
 
 Observer Pattern Class Diagram:
 
