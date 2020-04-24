@@ -149,3 +149,20 @@ Observer Pattern Class Diagram:
 Observer Pattern Sequence Diagram:
 
 ![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
+
+### Pros & Cons of Each
+
+Strategy Pros: In my opinion, this class does the best job of separating what changes from what stays the same. It also does the best job of encapsulating the integration
+algorithms of our system that will be subject to change via the client. It also allows for reuse, since all we need to do is create another IntegrationMethod
+strategy class when we get new requirements. It also will execute the integrate() method of the strategy that we specify, and not all of the integrate() methods,
+which is done in the observer pattern implementation.
+
+Strategy Cons: There are more dependencies between classes in comparison to the Observer pattern's design, which means our design employs more coupling.
+
+Observer Pros: Provides a very loosely coupled design where the ConcreteSubject that actually calls the integrate() method is largely separated from the
+ConreteIntegrationObservers. Additionally, our design will also handle changes well; all we need to do is add more ConcreteIntegrationObservers when our
+client requests more.
+
+Observer Cons: You have to go through all of the observers and compute their integration values instead of being able to simply compute one integration value.
+Additionally, I think the Strategy pattern is better for reuse, since for the observer pattern you not only need to create the new ConcreteObserver class, but you
+also must then register that observer with the observers list in concrete subject.
