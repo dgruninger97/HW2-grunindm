@@ -112,11 +112,11 @@ and the subjects, which is an important principle when considering the observer 
 
 Class Diagram:
 
-![Observer Class Diagram](images/ObserverClassDiagram.png)
+![Observer Class Diagram](images/StrategyClassDiagram.png)
 
 Sequence Diagram:
 
-![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
+![Observer Sequence Diagram](images/StrategySequenceDiagram.png)
 
 ### Citations
 
@@ -127,3 +127,25 @@ https://sourcemaking.com/design_patterns/observer
 https://www.baeldung.com/java-observer-pattern
 
 ### Time Spent -- 1.5 hours
+
+## Final Selection
+
+Date: 4/24/2020
+
+### Revisit best Strategy & Observer Pattern Sketches
+
+Strategy Pattern Class Diagram:
+
+![Observer Class Diagram](images/ObserverClassDiagram.png)
+
+Strategy Pattern Sequence Diagram:
+
+![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
+
+Observer Pattern Class Diagram:
+
+![Observer Class Diagram](images/ObserverClassDiagram.png)
+
+Observer Pattern Sequence Diagram:
+
+![Observer Sequence Diagram](images/ObserverSequenceDiagram.png)
