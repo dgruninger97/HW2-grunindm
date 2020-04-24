@@ -176,10 +176,12 @@ This will allow our code to have better resuse and help it **adapt to change** w
 
 ### Citations
 
-http://fuchangmiao.blogspot.com/2007/10/strategy-vs-observer.html
+1. http://fuchangmiao.blogspot.com/2007/10/strategy-vs-observer.html
 
-https://neillmorgan.wordpress.com/2010/02/07/observer-pattern-pros-cons/
+2. https://neillmorgan.wordpress.com/2010/02/07/observer-pattern-pros-cons/
 
-https://javadevcentral.com/strategy-design-pattern#Strategy_Pattern_%E2%80%93_Pros
+3. https://javadevcentral.com/strategy-design-pattern#Strategy_Pattern_%E2%80%93_Pros
 
-https://javadevcentral.com/strategy-design-pattern#Strategy_Pattern_%E2%80%93_Cons (Same site but different section)
+4. https://javadevcentral.com/strategy-design-pattern#Strategy_Pattern_%E2%80%93_Cons (Same site but different section)
+
+### Time Spent -- 1.5 hours
