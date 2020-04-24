@@ -166,3 +166,20 @@ client requests more.
 Observer Cons: You have to go through all of the observers and compute their integration values instead of being able to simply compute one integration value.
 Additionally, I think the Strategy pattern is better for reuse, since for the observer pattern you not only need to create the new ConcreteObserver class, but you
 also must then register that observer with the observers list in concrete subject.
+
+### Preference
+
+I prefer the strategy pattern approach. Overall, I believe it does a better job of **sperating what changes from what stays the same.**
+It does this by encapuslating the integration algorithm into a strategy which can be implemented by several different client integration methods.
+This will allow our code to have better resuse and help it **adapt to change** when new integration methods come in.
+
+
+### Citations
+
+http://fuchangmiao.blogspot.com/2007/10/strategy-vs-observer.html
+
+https://neillmorgan.wordpress.com/2010/02/07/observer-pattern-pros-cons/
+
+https://javadevcentral.com/strategy-design-pattern#Strategy_Pattern_%E2%80%93_Pros
+
+https://javadevcentral.com/strategy-design-pattern#Strategy_Pattern_%E2%80%93_Cons (Same site but different section)
