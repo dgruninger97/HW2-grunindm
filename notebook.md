@@ -6,8 +6,8 @@ Date: 4/22/2020
 
 ### Candidate Design 1: 
 
-For candidate design 1, we should consider using the Strategy Pattern for the the new interagration methods that are being provided to our system. We could create
-a class, called IntegrationStrategy, which would replace the "integrationMethod" string that is currently passed into the integrate method. That way we could simply
+For candidate design 1, we should consider using the Strategy Pattern for the new interagration methods that are being provided to our system. We could create
+a class, called IntegrationStrategy, which would replace the "integrationMethod" string that is currently passed into the integrate method function call. That way we could simply
 call that IntegrationStrategy's integrate method, and it would call the appropriate strategy pattern to handle the proper integration.
 
 #### Pros
@@ -20,7 +20,7 @@ the IntegrationStrategy when the customer requests a new integration method.
 #### Cons
 
 Will require us to significantly change our integrate method, and how we are calling that method. This is because we are now passing in a strategy instead of a
- string to represent our actual integration methods.
+ string to represent our actual integration methods. Also, applying this pattern will increase the coupling of our system.
 
 ### Candidate Design 2: 
 
